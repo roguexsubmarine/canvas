@@ -12,7 +12,7 @@ window.addEventListener('resize', function(){
     init();
 })
 
-colorArray = [
+const colorArray = [
     [
         "#FF4858",
         "#1B7F79",
@@ -47,6 +47,27 @@ colorArray = [
         "#45C4B0",
         "#13678A",
         "#D2E8E3"
+    ],
+    [
+        "#F25C84",
+        "#8596A6",
+        "#4D6473",
+        "#D6F299",
+        "#F2F2F2"
+    ],
+    [
+        "#328C7C",
+        "#27403B",
+        "#8C5637",
+        "#BF7F5A",
+        "#D9AA8F"
+    ],
+    [
+        "#D95970",
+        "#F28D9F",
+        "#999FBF",
+        "#C4D9BF",
+        "#C6D984"
     ]
 ];
 

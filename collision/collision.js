@@ -150,6 +150,7 @@ function Particle(x, y, dx, dy, radius, color){
 
         //for interactivity
         if(Math.abs(mouse.x - this.x) < 100 && Math.abs(mouse.y - this.y) < 100){
+            c.lineWidth = 3;
             c.strokeStyle = this.color;
             c.stroke();
         }
@@ -197,7 +198,7 @@ function init(){
 
 
     for (var i = 0; i < arrayLength; i++){
-        const radius = 18;
+        const radius = 10 + randomint(0, 8);
         let x = (Math.random() * (innerWidth - 2*radius)) + radius;
         let y = (Math.random() * (innerHeight - 2*radius)) + radius;
         const dx = (Math.random() - 0.5);

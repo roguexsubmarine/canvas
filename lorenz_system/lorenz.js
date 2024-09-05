@@ -20,7 +20,7 @@ function lorenz(x, y, z, s = 10, r = rD, b = 2.667) {
 function drawLorenz() {
 
     const dt = 0.01;
-    const numSteps = 10000;
+    // const numSteps = 10000;
     let [x, y, z] = [0, 1, 1.05];
     let step = 0;
 
@@ -31,7 +31,7 @@ function drawLorenz() {
     ctx.lineWidth = 1;
 
     function drawStep() {
-        if (step >= numSteps) return;
+        // if (step >= numSteps) return;
 
         ctx.beginPath();
         ctx.moveTo(canvas.width / 2 + x * 10, canvas.height / 1.5 - z * 10);

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Henon Map</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        canvas{
+            display: block;
+        }
+
+        .sliders{
+            position: absolute;
+            margin-top: 20px;
+            margin-left: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+    </style>
+</head>
+<body>  
+        <div class="sliders">
+            <input type="range" name="a" id="a" min="0" max="100">
+            <input type="range" name="b" id="b" min="0" max="100">
+            <hr>
+            <a href="https://en.wikipedia.org/wiki/H%C3%A9non_map"><button style="width: 150px;">info</button></a>
+        </div>
+        <canvas></canvas>
+    <script src="./henon.js"></script>
+</body>
+</html>

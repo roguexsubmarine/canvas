@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gingerbreadman Map</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        canvas{
+            display: block;
+        }
+
+        .sliders{
+            position: absolute;
+            margin-top: 20px;
+            margin-left: 20px;
+            display: flex;
+            gap: 50px;
+            justify-content: space-between;
+        }
+
+        button{
+            width: max-content;
+        }
+
+    </style>
+</head>
+<body>  
+        <div class="sliders">
+            <input type="range" name="zoom" id="zoom" min="0" max="1000">
+            <a href="https://en.wikipedia.org/wiki/Gingerbreadman_map"><button style="width: 150px;">Gingerbreadman Map</button></a>
+            
+
+        </div>
+        <canvas></canvas>
+    <script src="./gingerbreadman.js    "></script>
+</body>
+</html>
